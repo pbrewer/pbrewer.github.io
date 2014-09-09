@@ -1437,7 +1437,7 @@ function ($compile, $parse, $document, $position, dateFilter, dateParser, datepi
       });
 
       // popup element used to display calendar
-      var popupEl = angular.element('<div datepicker-popup-wrap><div datepicker></div></div>');
+      var popupEl = angular.element('<div datepicker-popup-wrap=""><div datepicker=""></div></div>');
       popupEl.attr({
         'ng-model': 'date',
         'ng-change': 'dateSelection()'
